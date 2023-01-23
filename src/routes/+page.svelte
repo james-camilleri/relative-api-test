@@ -1,7 +1,12 @@
-<script>
+<script lang="ts">
+	import type { PageData } from './$types';
+
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+
+	export let data: PageData;
+	console.log(data);
 </script>
 
 <svelte:head>
